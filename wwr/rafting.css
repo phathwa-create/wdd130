@@ -1,0 +1,114 @@
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(30, 41, 59, 0.7);
+    color: #fff;
+    padding: 15px;
+    font-family: var(--heading-font);
+    margin: 0;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(30, 41, 59, 0.85);
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+
+.hero article img {
+    float: right;
+    width: 120px;
+    height: auto;
+    margin-left: 15px;
+    border: 2px solid #fff;
+}
+
+.hero article p {
+    margin: 0;
+    color: #fff;
+}
+
+section {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+section h2,
+main > section:not(.hero) h2 {
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 15px;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: 30px;
+}
